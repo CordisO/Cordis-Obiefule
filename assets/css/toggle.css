@@ -1,0 +1,71 @@
+.theme-checkbox {
+    --toggle-size: 16px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 8.5em;
+    height: 3.125em;
+    background: linear-gradient(to right, #3f46c2 50%, #8c52ff 50%) no-repeat;
+    background-size: 205%;
+    background-position: 0;
+    transition: 0.4s;
+    border-radius: 99em;
+    position: relative;
+    cursor: pointer;
+    font-size: var(--toggle-size);
+}
+
+.theme-checkbox::before {
+    content: "";
+    width: 2.25em;
+    height: 2.25em;
+    position: absolute;
+    top: 0.438em;
+    left: 0.438em;
+    background: linear-gradient(to right, #dab6ff 50%, #d5d0ec 50%) no-repeat;
+    background-size: 205%;
+    background-position: 100%;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+  
+.theme-checkbox:checked::before {
+    left: calc(100% - 2.25em - 0.438em);
+    background-position: 0;
+}
+  
+.theme-checkbox:checked {
+    background-position: 100%;
+}
+
+@media (max-width: 767px) {
+    .theme-checkbox {
+        width: 8em;
+        height: 2.625em;
+    }
+
+    .theme-checkbox::before {
+        width: 1.75em;
+        height: 1.75em;
+    }
+}
+
+@media (max-width: 480px) {
+    .theme-checkbox {
+        width: 7em;
+        height: 2.225em;
+    }
+
+    .theme-checkbox::before {
+        width: 1.5em;
+        height: 1.5em;
+    }
+    .theme-checkbox:checked::before {
+        left: calc(100% - 2.25em - 0.438em);
+        background-position: 0;
+    }
+    
+    .theme-checkbox:checked {
+        background-position: 100%;
+    }
+}
