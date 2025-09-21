@@ -546,11 +546,11 @@ h3 {
 
 /* Project-specific background images */
 .project-1::before {
-  background-image: url('Assets/images/noeopad.png');
+  background-image: url('/assets/images/noeopad.png');
 }
 
 .project-2::before {
-  background-image: url('Assets/images/vybrato.png');
+  background-image: url('/assets/images/vybrato.png');
 }
 
 .project-3::before {
