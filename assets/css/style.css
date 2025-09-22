@@ -1379,7 +1379,7 @@ h3 {
   }
 
   .profile-img img {
-    max-width: 80px; /* keep it visible but not huge */
+    max-width: 300px; /* keep it visible but not huge */
     height: auto;
     margin: 10px auto;
   }
