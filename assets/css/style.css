@@ -1123,7 +1123,7 @@ h3 {
   }
 
   .profile-card {
-    position: static; /*Made new changes here*/
+    position: relative; /*Made new changes here*/
     max-width: 80%;
     margin: 0 auto;
   }
@@ -1208,7 +1208,6 @@ h3 {
 
   .profile-section {
     position: relative; /* remove sticky */
-    width: 100%;
     height: auto;
     padding: 2rem;
   }
@@ -1372,7 +1371,6 @@ h3 {
 
   .profile-section {
     position: relative; /* remove sticky */
-    width: 100%;
     padding: 1rem;
     text-align: center;
   }
