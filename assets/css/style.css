@@ -1111,12 +1111,13 @@ h3 {
 @media (max-width: 768px) {
   .layout-wrapper {
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto; /*made changes here*/
+    grid-template-rows: auto 1fr; /*made changes here*/
     justify-content: center;
     align-items: center;
   }
 
   .main-section {
+    margin: 1rem;
     height: auto;
     padding: 5rem;
   }
@@ -1206,6 +1207,8 @@ h3 {
   }
 
   .profile-section {
+    position: relative; /* remove sticky */
+    width: 100%;
     height: auto;
     padding: 2rem;
   }
@@ -1246,6 +1249,7 @@ h3 {
   }
 
   .main-section {
+    margin-top: 1rem;
     height: auto;
     padding: 2.5rem;
   }
@@ -1367,6 +1371,8 @@ h3 {
   }
 
   .profile-section {
+    position: relative; /* remove sticky */
+    width: 100%;
     padding: 1rem;
     text-align: center;
   }

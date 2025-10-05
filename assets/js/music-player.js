@@ -37,7 +37,6 @@ function loadSong(index) {
   audio.src = playlist[index].src;
   title1.textContent = playlist[index].title;
   title2.textContent = playlist[index].artist;
-  audio.play();
 
   // Show pause icon
   playIcon.style.display = "none";
